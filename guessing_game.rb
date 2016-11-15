@@ -1,9 +1,19 @@
 # create random number & save random number to variable
-  random = rand(1..100)
-  p random
+  def computer_random(number)
+    return "#{number}"
+  end
 
-#Prompt user for their #
-  print "Hello, please type a number from 1-100:"
-  users_number = gets.chomp
+  computer_number = computer_random(rand(1..100))
+  winning_number = computer_number.to_i
+  p winning_number
 
-#Compare user input to the variable
+# get usere number
+
+  def users_input(question)
+    print "#{question}"
+    gets.chomp
+  end
+
+user_answer = users_input("What is your ramdom number?")
+users_number = user_answer.to_i
+p users_number
