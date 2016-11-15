@@ -5,7 +5,8 @@
 
   computer_number = computer_random(rand(1..100))
   winning_number = computer_number.to_i
-  p winning_number
+  # CHEAT! GET THE WINNING NUMBER
+  # p winning_number
 
 # get users number
 
@@ -20,10 +21,9 @@ loop do
   count = count +1
   user_answer = users_input("What is your ramdom number?🤔   ")
   users_number = user_answer.to_i
-  p users_number
 
   if users_number >= winning_number
-    puts "TOO HIGH 👆, please try again"
+    puts "#{users_number} is TOO HIGH 👆, please try again"
   end
 
   if users_number <= winning_number
