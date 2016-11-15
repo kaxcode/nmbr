@@ -3,7 +3,7 @@
     return "#{number}"
   end
 
-  computer_number = computer_random(rand(1..100))
+  computer_number = computer_random(rand(1..100))Add
   winning_number = computer_number.to_i
   # CHEAT! GET THE WINNING NUMBER
   # p winning_number
