@@ -18,25 +18,25 @@ count=0
 
 loop do
   count = count +1
-  user_answer = users_input("What is your ramdom number?")
+  user_answer = users_input("What is your ramdom number?🤔   ")
   users_number = user_answer.to_i
   p users_number
 
   if users_number >= winning_number
-    puts "TOO HIGH, please try again"
+    puts "TOO HIGH 👆, please try again"
   end
 
   if users_number <= winning_number
-    puts "TOO LOW, please try again"
+    puts "TOO LOW 👇, please try again"
   end
 
   if users_number == winning_number
-    puts "You got it!!!"
+    puts "You got it!!! 👏🍕🍾🚀🎉"
     break
   end
 
   if count >= 5
-    puts "You loooose!"
+    puts "You loooose! 😵 "
     break
   end
 end
