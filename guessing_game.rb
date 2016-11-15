@@ -16,11 +16,17 @@
   end
 
 count=0
+guesses= []
 
 loop do
-  count = count +1
   user_answer = users_input("What is your ramdom number?🤔   ")
   users_number = user_answer.to_i
+
+  if guesses.include?(users_number)
+    puts "Are you sleepy? You tried that number already"
+  end
+
+  guesses << users_number
 
   if users_number >= winning_number
     puts "#{users_number} is TOO HIGH 👆, please try again"
@@ -34,6 +40,8 @@ loop do
     puts "You got it!!! 👏🍕🍾🚀🎉"
     break
   end
+
+  count = count +1
 
   if count >= 5
     puts "You loooose! 😵 "
